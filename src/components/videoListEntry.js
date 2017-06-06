@@ -4,9 +4,11 @@ angular.module('video-player')
   bindings: {
     image: '<',
     title: '<',
-    description: '<'
+    description: '<',
+    onClick: '<'
   },
   templateUrl: 'src/templates/videoListEntry.html'
+  
 });
 
 // var videoFeederController = function() {
