@@ -1,11 +1,15 @@
 <ul class="video-list">
-  <video-list-entry ng-repeat="video in window.exampleVideoData"><h5><em>{{video}}</em> <video-list videos="videoList"></video-list></h5></video-list-entry>
- <!--  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry> -->
-
+  <video-list-entry ng-repeat="video in $ctrl.videos" image="video.snippet.thumbnails.default.url" title="video.snippet.title" description="video.snippet.description"></video-list-entry>
 </ul>
 
-
-<!--   <video-list-entry ng-repeat="video in window.exampleVideoData"><h5><em>{{video}}</em> component goes here</h5></video-list-entry> -->
+<!-- <div ng-repeat="video in videos"> -->
+<!-- </div> -->
+<!--   <li ng-repeat="video in videos" title="video.snippet.title" description="video.snippet.description" class="video-list-entry media">
+  <div class="media-left">
+    <img class="media-object" src="https://i.ytimg.com/vi/1w8Z0UOXVaY/default.jpg" />
+  </div>
+  <div class="media-body">
+    <div class="video-list-entry-title">{{video.title}}</div>
+    <div class="video-list-entry-detail">{{video.description}}</div>
+  </div>
+</li> -->

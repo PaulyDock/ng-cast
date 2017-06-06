@@ -1,12 +1,8 @@
 angular.module('video-player')
-.controller('videoCtrlInit', ['$scope', function($scope) {
-  $scope.videos = window.exampleVideoData;
-}])
-
 .component('app', {
+  controller: function() {
+    this.videos = window.exampleVideoData;
+  },
   templateUrl: 'src/templates/app.html'
-  // bindings: {
-  //   video: '<'
-  // }
-  
 });
+

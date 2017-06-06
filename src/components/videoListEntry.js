@@ -1,8 +1,8 @@
 angular.module('video-player')
-.controller('videoDataHolderController', videoDataHolderController)
+// .controller('videoDataHolderController', videoDataHolderController)
 .component('videoListEntry', {
   bindings: {
-    video: '<',
+    image: '<',
     title: '<',
     description: '<'
   },
@@ -19,12 +19,18 @@ angular.module('video-player')
 //   console.log('this.videos', this.videos);
 
 //   templateUrl: 'src/templates/videoListEntry.html';
-  
+
 
 // };
 
 
-var videoDataHolderController = function() {
-  video = window.exampleVideoData[0];
-  console.log('videos', videos);
+var videoDataHolderController = function(videos) {
+  // videos = window.exampleVideoData;
+  // console.log('videos', videos);
+  
+  // let obj = {};
+  // obj.image = video.snippet.thumbnails.default;
+  // obj.title = video.snippet.title;
+  // obj.description = video.snippet.title;
+  // return obj;
 };
