@@ -1,10 +1,10 @@
 angular.module('video-player')
 .component('videoList', {
   templateUrl: 'src/templates/videoList.html',
-  controller: function() {
-    console.log('videoList this', this);
-    console.log('stringify this', JSON.stringify(this));
-  },
+  // controller: function() {
+  //   // console.log('videoList this', this);
+  //   // console.log('stringify this', JSON.stringify(this));
+  // },
   bindings: {
     videos: '<',
     onClick: '<'

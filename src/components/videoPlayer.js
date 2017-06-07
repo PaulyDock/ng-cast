@@ -2,8 +2,8 @@ angular.module('video-player')
 
 .component('videoPlayer', {
   controller: function() {
-    console.log('videoPlayer this', this);
-    console.log('this.video', this.video);
+    // console.log('videoPlayer this', this);
+    // console.log('this.video', this.video);
   },
   bindings: {
     video: '<'
@@ -13,7 +13,7 @@ angular.module('video-player')
   },
   controller: function() {
     this.videoUrl = () => {
-      return `https://www.youtube.com/embed/${this.video.id.videoId}`; //ternary oper. ??
+      return this.video ? `https://www.youtube.com/embed/${this.video.id.videoId}` : ''; //ternary oper. ??
     };
   },
   templateUrl: 'src/templates/videoPlayer.html'
